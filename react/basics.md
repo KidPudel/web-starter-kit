@@ -33,4 +33,16 @@ export default App;
 Props are letting you to access variables
 
 # hooks
-Hools leting you to manage state of the variable
+Hools leting you to manage state of the variable (create internal state)
+
+the hook is just a function that returns a value as well as a function to change a value
+
+```js
+const [count, setCount] = setState(0);
+
+return (
+    <p>{count}</p>
+    <button onClick= { () => setCount(count + 1) }></button>
+)
+
+```
