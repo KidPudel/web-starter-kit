@@ -8,9 +8,9 @@ In CSS, there are different types of units that can be used to specify values fo
 
 4. Viewport Height (`vh`): Viewport height is similar to viewport width, but it's based on the height of the browser window instead.
 
-5. Em (`em`): Em is a relative unit of measurement that is based on the font size of the parent element. For example, if the font size of a parent element is 16px, and a child element is set to 1em, it will be 16px. If the font size of the parent element is changed to 20px, the child element will be 20px.
+5. Em (`em`): Em is a relative unit of measurement **_that is based on the font size of the parent element_**. For example, if the font size of a parent element is 16px, and a child element is set to 1em, it will be 16px. If the font size of the parent element is changed to 20px, the child element will be 20px.
 
-6. Rem (`rem`): Rem is similar to Em, but it's based on the font size of the root element (usually the <html> tag). This can be useful for creating more consistent layouts across multiple pages or components.
+6. Rem (`rem`): Rem is similar to Em, but it's based on the **_font size of the root element (usually the <html> tag)_**. This can be useful for creating more consistent layouts across multiple pages or components.
 
 7. Absolute (`in`, `cm`, `mm`): Absolute units are based on physical measurements, such as inches, centimeters, and millimeters. These units are rarely used in web design, as they are not very flexible or adaptable to different screen sizes.
 
@@ -18,7 +18,7 @@ In CSS, there are different types of units that can be used to specify values fo
 
 # Showcase
 ![image](https://user-images.githubusercontent.com/63263301/229217559-8c140797-6285-4e52-997b-5c938ede6c9b.png)
-![image](https://user-images.githubusercontent.com/63263301/229217875-48e0a204-6fd7-4849-9a62-ac1bd2ee954d.png)
+![image](https://user-images.githubusercontent.com/63263301/229218927-53bd8b3b-e39d-4a87-b0a4-f6e72d2fb043.png)
 
 
 
