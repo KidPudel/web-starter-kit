@@ -1,4 +1,4 @@
-Here are some of the most important CSS properties to know:
+# Important CSS properties to know !!
 
 - `display`: specifies how an element should be displayed (e.g. block, inline, inline-block).
   - `flexbox` and `grid`: layout systems for creating flexible, responsive designs.\
