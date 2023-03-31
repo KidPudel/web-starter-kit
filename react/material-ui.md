@@ -10,3 +10,10 @@
 - `Dialog`: A component that can be used to display a modal dialog box, with customizable content and actions.
 - `Snackbar`: A component that can be used to display temporary messages to the user.
 - `AppBar` and Toolbar: These components provide a navigation bar and a set of tools for navigation and other actions.
+
+
+# override property
+`sx` prop that allows **_defining system overrides_** as well as **_additional CSS styles_**
+```tsx
+<Card className="Pin" sx={{ boxShadow: "5px 10px" }}>
+```
