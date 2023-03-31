@@ -17,3 +17,4 @@
 ```tsx
 <Card className="Pin" sx={{ boxShadow: "5px 10px" }}>
 ```
+![image](https://user-images.githubusercontent.com/63263301/229241380-f06a9f0c-f3be-4379-b5b7-138387a59a02.png)
