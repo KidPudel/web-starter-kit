@@ -1,7 +1,10 @@
 Here are some of the most important CSS properties to know:
 
 - `display`: specifies how an element should be displayed (e.g. block, inline, inline-block).
-  - `flexbox` and `grid`: layout systems for creating flexible, responsive designs.
+  - `flexbox` and `grid`: layout systems for creating flexible, responsive designs.\
+    - `flex-direction` set column-based or row-based
+    - `flex-shring` in child, we can set it to 0, so it won't shrink at all
+    - `flex-grow` in child, we can set it to 1, so it will scale as our screen stretches
 - `background-color`: sets the background color of an element.
 - `color`: sets the text color of an element.
 - `font-size`: sets the size of the text.
@@ -29,5 +32,5 @@ Here are some of the most important CSS properties to know:
 
 in flexbox there is a main and cross access represented by `justify-center` and `align-items` respectively
 
-![image](https://user-images.githubusercontent.com/63263301/229141149-51268235-fb6a-44bc-9309-ba8ae5f6477b.png)
-![image](https://user-images.githubusercontent.com/63263301/229141218-9420920e-e0a7-4afb-acfa-d3f20e7c9220.png)
+<img src="https://user-images.githubusercontent.com/63263301/229141149-51268235-fb6a-44bc-9309-ba8ae5f6477b.png" width=500px alt="image">
+<img src="https://user-images.githubusercontent.com/63263301/229141218-9420920e-e0a7-4afb-acfa-d3f20e7c9220.png" width=500px alt="image">
