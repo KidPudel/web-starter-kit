@@ -5,6 +5,7 @@ Here are some of the most important CSS properties to know:
     - `flex-direction` set column-based or row-based
     - `flex-shring` in child, we can set it to 0, so it won't shrink at all
     - `flex-grow` in child, we can set it to 1(weight), so it will scale as our screen stretches
+    - `flex` for both
     - `align-self` in child, we can override cross-axis for each item
     - `order` in child, we can change the order in which element is positioned
 - `background-color`: sets the background color of an element.
@@ -17,7 +18,14 @@ Here are some of the most important CSS properties to know:
 - `width` and `height`: sets the width and height of an element.
 - `margin` and `padding`: controls the spacing around an element.
 - `border`: sets the border around an element.
-- `box-sizing`: specifies how the width and height of an element should be calculated.
+- `box-sizing`: specifies how the **_total_** width and height of an element should be calculated.
+  - `content-box`: This is the default value. When you set the width and height of an element, you're setting the size of the content area inside the element. The padding and border are added to the outside of the content area, which means they increase the overall size of the element.
+  - `border-box`: With this value, the width and height of an element are calculated to include the padding and border. This means that if you set the width and height of an element, the total size of the element will be that size, including any padding and border. The content area will then be calculated to fit inside that total size.
+- `overflow`: controls how content exceeded of the box dimentions should be handles
+  - `visible` (default) - The content is not clipped and may be rendered outside the box.
+  - `hidden` - The content is clipped and any content that exceeds the dimensions of the box is hidden.
+  - `scroll` - The content is clipped and a scrollbar is added to see the rest of the content.
+  - `auto` - The content is clipped and a scrollbar is added only when necessary.
 - `position`: specifies the positioning method for an element (e.g. relative, absolute, fixed).
 - `z-index`: sets the stacking order of elements.
 - `float`: positions an element to the left or right of its container.
