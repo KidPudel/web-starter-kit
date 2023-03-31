@@ -96,7 +96,7 @@ In this structure:
 - The `context` folder contains any React Contexts used in the app, such as an AuthContext or ThemeContext.
 - The `data` folder contains any data used in the app, such as API endpoints or constants. 
 - The `hooks` folder contains custom hooks used throughout the app.
-- The `pages` folder contains the top-level pages of the app, such as the home page, about page, and so on. 
+- The `pages` folder contains the top-level pages of the app, such as the home page, about page, and so on. **_It contains unique components to that page_**
 - The `utils` folder contains any utility functions or modules used throughout the app.
 
 
