@@ -2,9 +2,9 @@ In CSS, there are different types of units that can be used to specify values fo
 
 1. Pixels (`px`): Pixels are a fixed unit of measurement that are used to define exact sizes. One pixel represents one dot on the screen. The size of a pixel may vary depending on the screen resolution.
 
-2. Percentages (`%`): Percentages are a relative unit of measurement that are based on the size of the parent element. For example, if a parent element is 200px wide and a child element is set to be 50% wide, it will be 100px wide.
+2. Percentages (`%`): Percentages are a **_relative unit of measurement that are based on the size of the parent element_**. For example, if a parent element is 200px wide and a child element is set to be 50% wide, it will be 100px wide.
 
-3. Viewport Width (`vw`): Viewport width is a relative unit of measurement that is based on the width of the browser window. 1vw is equal to 1% of the viewport width. For example, if the viewport is 1000px wide, 1vw would be equal to 10px.
+3. Viewport Width (`vw`): Viewport width is a **_relative unit of measurement that is based on the width of the browser window_ (and not on a parent like `%`)**. 1vw is equal to 1% of the viewport width. For example, if the viewport is 1000px wide, 1vw would be equal to 10px.
 
 4. Viewport Height (`vh`): Viewport height is similar to viewport width, but it's based on the height of the browser window instead.
 
@@ -15,6 +15,11 @@ In CSS, there are different types of units that can be used to specify values fo
 7. Absolute (`in`, `cm`, `mm`): Absolute units are based on physical measurements, such as inches, centimeters, and millimeters. These units are rarely used in web design, as they are not very flexible or adaptable to different screen sizes.
 
 8. Flexible (`fr`): Flex units are a flexible unit of measurement that are used in CSS Grid layouts. 1fr represents one fraction of the available space in the grid container.
+
+# Showcase
+![image](https://user-images.githubusercontent.com/63263301/229217559-8c140797-6285-4e52-997b-5c938ede6c9b.png)
+![image](https://user-images.githubusercontent.com/63263301/229217875-48e0a204-6fd7-4849-9a62-ac1bd2ee954d.png)
+
 
 
 # Rule of thumb
