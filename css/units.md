@@ -1,9 +1,26 @@
 In CSS, there are different types of units that can be used to specify values for properties such as width, height, font size, and margin. Here are some of the most commonly used CSS units:
 
-- Pixels (px): Pixels are a fixed unit of measurement based on the screen resolution. They provide precise control over element sizes and positions and are often used for layout and positioning.
-- Percentages (%): Percentages are a relative unit of measurement based on the size of the parent element. They are often used for responsive design to create layouts that adjust to different screen sizes.
-- Em (em): Em is a relative unit of measurement based on the font size of the parent element. It can be useful for creating scalable designs where the font size and other elements adjust proportionally to each other.
-- Rem (rem): Rem is similar to Em, but it is based on the root element rather than the parent element. This makes it easier to create consistent designs across the whole page or application.
-- Viewport Units (vw, vh, vmin, vmax): Viewport units are relative units of measurement based on the size of the browser viewport. They are useful for creating designs that adapt to different screen sizes and orientations.
-- Color Units: CSS also supports various color units like hex, rgba, hsl, etc., which can be used to specify colors for different elements.
-- Overall, understanding the different CSS units and when to use them is an important part of creating well-designed and responsive web pages and applications.
+1. Pixels (px): Pixels are a fixed unit of measurement that are used to define exact sizes. One pixel represents one dot on the screen. The size of a pixel may vary depending on the screen resolution.
+
+2. Percentages (%): Percentages are a relative unit of measurement that are based on the size of the parent element. For example, if a parent element is 200px wide and a child element is set to be 50% wide, it will be 100px wide.
+
+3. Viewport Width (vw): Viewport width is a relative unit of measurement that is based on the width of the browser window. 1vw is equal to 1% of the viewport width. For example, if the viewport is 1000px wide, 1vw would be equal to 10px.
+
+4. Viewport Height (vh): Viewport height is similar to viewport width, but it's based on the height of the browser window instead.
+
+5. Em (em): Em is a relative unit of measurement that is based on the font size of the parent element. For example, if the font size of a parent element is 16px, and a child element is set to 1em, it will be 16px. If the font size of the parent element is changed to 20px, the child element will be 20px.
+
+6. Rem (rem): Rem is similar to Em, but it's based on the font size of the root element (usually the <html> tag). This can be useful for creating more consistent layouts across multiple pages or components.
+
+7. Absolute (in, cm, mm): Absolute units are based on physical measurements, such as inches, centimeters, and millimeters. These units are rarely used in web design, as they are not very flexible or adaptable to different screen sizes.
+
+8. Flexible (fr): Flex units are a flexible unit of measurement that are used in CSS Grid layouts. 1fr represents one fraction of the available space in the grid container.
+
+
+# Rule of thumb
+- font-size: `rem`
+- width: `%` in combination with a `max-width`, `ch`
+- height: question urself "do i rly need to set height" if yes -> use a `min-height`
+- padding/margin: `rem` or `em`, kevin often uses `em` for padding of buttons
+- media queries: `em`
+- `px` only for little things like shadows, borders etc.
