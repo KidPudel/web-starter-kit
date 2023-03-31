@@ -2,15 +2,17 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Pin from "./components/Pin"
+
+import { Pin } from "./components/Pin"
+
 
 function App() {
   let gesture: string = "🤟";
 
   return (
     <div className="App">
-      <div className="inner-div">
-        <Pin title="Adventure time" description="adventure time pin" />
+      <div className="nested-window">
+        <Pin title="Adventure Time " description="adventure time pin" />
       </div>
     </div>
   );
@@ -20,53 +22,69 @@ export default App;
 
 ```
 
+```css
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.App {
+  min-height: 100vh;
+  background-color: pink;
+  display: flex;
+  padding: 5px; 
+}
+
+.nested-window {
+  background-color: blueviolet;
+  border: 5px solid black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Pin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+}
+
+
+```
+
+
 ```tsx
-import { Box, Card } from "@mui/material";
+import { Card, CardContent, CardMedia } from "@mui/material";
 
-
-export default function Pin({ title, description }: {
+export function Pin({ title, description }: {
     title: string;
-    description: string;
+    description: string
 }) {
     return (
-        <Card elevation={15} className="Pin-card">
-            <Box>
-                <h1 >
+        <Card className="Pin" sx={{ boxShadow: "5px 10px" }}>
+            <CardMedia
+                component="img"
+                height="140"
+                image="https://media.npr.org/assets/img/2013/06/16/fj_princesses_300_wide-f84adf6c953c93c422186bf6d470612c6bc50145-s900-c85.webp"
+                alt="adventure time" />
+            <CardContent>
+                <h1>
                     {title}
                 </h1>
                 <p>
                     {description}
                 </p>
-            </Box>
+
+            </CardContent>
         </Card>
     )
 }
-```
 
-
-```css
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-
-.inner-div {
-  min-height: 100vh; 
-  min-width: 100vw;
-  background-color: blueviolet;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.Pin-card {
-  width: 300px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} 
+export { Card };
 ```
