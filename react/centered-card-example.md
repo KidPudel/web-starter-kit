@@ -88,3 +88,6 @@ export function Pin({ title, description }: {
 
 export { Card };
 ```
+
+![image](https://user-images.githubusercontent.com/63263301/229242561-948a0062-8ca9-40a1-83da-fb417db35c10.png)
+
