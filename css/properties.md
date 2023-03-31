@@ -5,7 +5,7 @@ Here are some of the most important CSS properties to know:
     - `flex-direction` set column-based or row-based
     - `flex-shring` in child, we can set it to 0, so it won't shrink at all
     - `flex-grow` in child, we can set it to 1(weight), so it will scale as our screen stretches
-    - `align-self` in child, we can override for each item
+    - `align-self` in child, we can override cross-axis for each item
 - `background-color`: sets the background color of an element.
 - `color`: sets the text color of an element.
 - `font-size`: sets the size of the text.
