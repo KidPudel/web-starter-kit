@@ -175,6 +175,6 @@ my-react-app/
 - the `features` folder contains top-level features of the app, such as authentication, notifications, search, and so on.
 -  The `layouts` folder contains the layout components used to wrap the pages of the app, such as a DashboardLayout that adds a sidebar and navigation to the dashboard pages.
 -  The `libs` folder contains any external libraries used in the app, such as `moment.js` for working with dates or `axios` for making API requests.
--  The services folder contains any services or classes used in the app, such as an AuthService for handling user authentication.
+-  The `services` folder contains any services or classes used in the app, such as an AuthService for handling user authentication.
 
 
