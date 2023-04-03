@@ -44,3 +44,20 @@ in flexbox there is a main and cross access represented by `justify-center` and 
 
 <img src="https://user-images.githubusercontent.com/63263301/229141149-51268235-fb6a-44bc-9309-ba8ae5f6477b.png" width=500px alt="image">
 <img src="https://user-images.githubusercontent.com/63263301/229141218-9420920e-e0a7-4afb-acfa-d3f20e7c9220.png" width=500px alt="image">
+
+# Make it shine!
+```css
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+```
+![shine_vite_react](https://user-images.githubusercontent.com/63263301/229606711-de23da93-ba8f-437a-b265-017aef01194e.gif)
