@@ -136,5 +136,5 @@ let [loaded, setLoaded] = useState(false);
 useEffect(() => {
     fetch('foo').then(() => setLoaded(true)) // re-rendering loop 👎
     
-    return alert("goodbye, component 👋")
+    return () => alert("goodbye, component 👋")
 }, [])
