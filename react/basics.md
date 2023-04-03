@@ -138,3 +138,52 @@ useEffect(() => {
     
     return () => alert("goodbye, component 👋")
 }, [])
+```
+
+# useContext
+context - share data without passing props.  
+
+Usage: Allow us access or consume current value from context provider which could be many layers higher
+```ts
+const moods = [
+    happy: '😃'
+    sad: '☹️'
+]
+
+const MoodContext = createContext(moods);
+
+export default function App(props) {
+    return (
+        <MoodContext.Provider value={mood.happy}>
+            <MoodEmoji />
+        </MoodContext.Provider>
+            
+    )
+}
+
+
+function MoodEmoji() {
+    const mood = useContext(MoodContext);
+    
+    return (
+        <p>
+            {mood.happy}
+        </p>
+    )
+}
+
+```
+`useContext()` basically a cleaner replacement for a context `Consumer`
+
+```ts
+function MoodEmoji() {
+    return (
+        <MoodContext.Context>
+            { ({mood}) => { <p> {mood} </p>} }
+        </MoodContext.Context>
+            
+    )
+}
+
+
+```
