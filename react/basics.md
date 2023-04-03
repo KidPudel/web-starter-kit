@@ -48,10 +48,36 @@ In this example, the `MyComponent` component is passed a `name` prop with a valu
 
 Props are an essential concept in React and are used extensively to create dynamic and reusable components.
 
-# hooks
-Hools leting you to manage state of the variable (create internal state)
+# State
+State is simply a javascript Object
 
-the hook is just a function that returns a value as well as a function to change a value
+# hooks
+Hooks are functions that let you "_hook into_" state and lifecycle features.  
+In other words hooks let us add state into functional component.  
+Hooks are functions that start with `use`.  
+Hooks are more restrictive that other functions.  
+
+> Rules: 
+> 1. hooks don't work inside classes - they let you use React without classes
+> 2. hooks called only at the top of the component
+
+```ts
+let [fruits, setFruits] = useState([]);
+
+let getFruits = async () => {
+    let response = await http.fetch("fruits/");
+    let fruits = await response.json();
+    setFruits(fruits)
+}
+```
+
+# useState
+
+_**Defenition**_: Hook function that leting you to manage state of the variable. They handle the data that changes over time. So when data changes - re-render the UI
+
+**_Returns_**: the hook is just a function that returns a value (reactive state) as well as a function to change a value (setter)
+
+**_Parameters_**: _**useState can take initial state as a parameter**_
 
 ```js
 const [count, setCount] = setState(0);
@@ -62,3 +88,53 @@ return (
 )
 
 ```
+
+# useEffect
+function that allows us to manage our component lifecycle
+
+---
+
+## Component lyfecycle
+1. Mounted (initialized)
+2. Updated (state updated)
+3. Unmounted (destryed)
+
+---
+
+This code will be runned when:
+1. Mounted
+2. Updated
+```ts
+useEffect(() => {
+    alert("hello!")
+}
+```
+
+But what if we want to fetch something when component is first initialized?  
+```ts
+let [loaded, setLoaded] = useState(false);
+useEffect(() => {
+    fetch('foo').then(() => setLoaded(true)) // re-rendering loop 👎
+})
+```
+Well that's bad, because then we will fetch something everytime when our state is changed and therefore change the state again and re-render it againt and..  
+In other words - that is bad.  
+
+The solution is to add the second parameter - **_dependencies_**
+```ts
+let [loaded, setLoaded] = useState(false);
+useEffect(() => {
+    fetch('foo').then(() => setLoaded(true)) // re-rendering loop 👎
+}, [])
+```
+if _dependencies_ are empty, then our useEffect will be called only on when it first initializes.  
+Or we can add dependencies - on which state update (re-render) `useEffect()` is going to be called.  
+
+And the last thing for `useEffect()` is we can do something "on destroy" of component:
+```ts
+let [loaded, setLoaded] = useState(false);
+useEffect(() => {
+    fetch('foo').then(() => setLoaded(true)) // re-rendering loop 👎
+    
+    return alert("goodbye, component 👋")
+}, [])
