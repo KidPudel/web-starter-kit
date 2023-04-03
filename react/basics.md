@@ -71,7 +71,7 @@ let getFruits = async () => {
 }
 ```
 
-# useState
+# `useState()`
 
 _**Defenition**_: Hook function that leting you to manage state of the variable. They handle the data that changes over time. So when data changes - re-render the UI
 
@@ -80,7 +80,7 @@ _**Defenition**_: Hook function that leting you to manage state of the variable.
 **_Parameters_**: _**useState can take initial state as a parameter**_
 
 ```js
-const [count, setCount] = setState(0);
+const [count, setCount] = useState(0);
 
 return (
     <p>{count}</p>
@@ -89,7 +89,7 @@ return (
 
 ```
 
-# useEffect
+# `useEffect()`
 function that allows us to manage our component lifecycle
 
 ---
@@ -140,7 +140,7 @@ useEffect(() => {
 }, [])
 ```
 
-# useContext
+# `useContext()`
 context - share data without passing props.  
 
 Usage: Allow us access or consume current value from context provider which could be many layers higher
@@ -184,6 +184,20 @@ function MoodEmoji() {
             
     )
 }
+```
 
+
+# `useRef()`
+Create a mutable value that will keep the same reference between renders (mutable value that does **_not_** re-render UI)
+
+```js
+const count = useRef(0);
+
+return (
+    <p>{count}</p>
+    <button onClick= { () => count.current++ }>Count</button> // this will not change a UI !!
+)
 
 ```
+Usecase: when we need to grab an element from a DOM.  
+> DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove elements from the document
