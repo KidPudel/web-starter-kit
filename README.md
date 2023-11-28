@@ -1,2 +1,2 @@
 # jts-starter-kit
-JavaScript/TypeScript look up notes
+web: html, css, JavaScript/TypeScript look up notes
