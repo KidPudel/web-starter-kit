@@ -14,7 +14,7 @@ In CSS, there are different types of units that can be used to specify values fo
 
 7. Absolute (`in`, `cm`, `mm`): Absolute units are based on physical measurements, such as inches, centimeters, and millimeters. These units are rarely used in web design, as they are not very flexible or adaptable to different screen sizes.
 
-8. Flexible (`fr`): Flex units are a flexible unit of measurement that are used in CSS Grid layouts. 1fr represents one fraction of the available space in the grid container. **Like Flexible in Flutter**
+8. Flexible (fractional) (`fr`): Flex units are a flexible unit of measurement that are used in CSS Grid layouts. 1fr represents one fraction of the available space in the grid container. **Like Flexible in Flutter or fractionallysizedbox**
 
 # Showcase
 ![image](https://user-images.githubusercontent.com/63263301/229217559-8c140797-6285-4e52-997b-5c938ede6c9b.png)
