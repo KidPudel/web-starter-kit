@@ -30,7 +30,8 @@
 - `position`: specifies the positioning method for an element (e.g. relative, absolute, fixed).
 - `z-index`: sets the stacking order of elements.
 - `float`: positions an element to the left or right of its container.
-
+- `padding, padding-left, etc`
+- `margin, margin-left, etc`
 
 # Flexbox
 
