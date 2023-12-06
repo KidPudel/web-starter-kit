@@ -1,6 +1,7 @@
 # Important CSS properties to know !!
 
 - `display`: specifies how an element should be displayed (e.g. block, inline-block).
+  - `bloc` and `inline-bloc`: defines how to treat element, as an inline or a bloc that takes up whole width
   - `flexbox` and `grid`: layout systems for creating flexible, responsive designs.\
     - `flex-direction` set column-based or row-based
     - `flex-shring` in child, we can set it to 0, so it won't shrink at all
