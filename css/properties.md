@@ -13,7 +13,7 @@
 - `color`: sets the text color of an element.
 - `border-color`: color of a border
 - `font-size`: sets the size of the text.
-- `font-style`: to set a style like bold or itelic
+- `font-style`: to set a style for example, italic
 - `font-family`: sets the font family for the text.
 - `font-weight`: sets the weight (boldness) of the text.
 - `line-height`: sets the height of each line of text.
