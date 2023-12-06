@@ -11,6 +11,7 @@
     - `order` in child, we can change the order in which element is positioned
 - `background-color`: sets the background color of an element.
 - `color`: sets the text color of an element.
+- `border-color`: color of a border
 - `font-size`: sets the size of the text.
 - `font-family`: sets the font family for the text.
 - `font-weight`: sets the weight (boldness) of the text.
