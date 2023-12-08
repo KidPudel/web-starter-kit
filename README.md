@@ -1,2 +1,2 @@
 # jts-starter-kit
-web: html, css, JavaScript/TypeScript look up notes
+web: html (structure), css(style and effects), JavaScript/TypeScript (behaviour) look up notes
