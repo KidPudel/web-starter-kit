@@ -8,6 +8,6 @@ Determines the type of box HTML renders (block, inline-block, inline, none, flex
 - `flex`: to layout its children as column or row with `flex-direction`
 
 # Defauilts
-- `block`: div
-- `inline`: p, a, span
+- `block`: div, p
+- `inline`: a, span
 - `inline-block`: img
