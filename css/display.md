@@ -7,7 +7,28 @@ Determines the type of box HTML renders (block, inline-block, inline, none, flex
 - `none`: acts as it disapears
 - `flex`: to layout its children as column or row with `flex-direction`
 
-# Defauilts
-- `block`: div, p
-- `inline`: a, span
-- `inline-block`: img
+### Block-level Elements:
+- `<div>`
+- `<p>`
+- `<h1>` to `<h6>` (headings)
+- `<ul>`, `<ol>`, `<li>` (lists)
+- `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, `<td>` (tables)
+- `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<input>`, `<button>`, `<select>`, `<textarea>` (forms)
+- `<header>`, `<footer>`, `<nav>`, `<section>`, `<article>`, `<aside>`, `<main>`, `<figure>`, `<figcaption>` (HTML5 semantic elements)
+
+### Inline Elements:
+- `<span>`
+- `<a>` (anchor)
+- `<strong>` (strong emphasis)
+- `<em>` (emphasized)
+- `<abbr>` (abbreviation)
+- `<cite>` (citation)
+- `<code>` (code)
+- `<br>` (line break)
+- `<img>` (image)
+- `<small>` (small text)
+- `<sub>` (subscript)
+- `<sup>` (superscript)
+
+### Inline-Block Elements:
+- `<img>`
