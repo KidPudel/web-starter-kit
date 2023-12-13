@@ -28,3 +28,4 @@
 28. `<span>`: Defines a small section of the document.
 29. `<br>`: Inserts a single line break.
 30. `<hr>`: Inserts a horizontal rule.
+31. `<template>`: hides content from the user and allows to use the content as the template to clone it and actually add to the DOM
